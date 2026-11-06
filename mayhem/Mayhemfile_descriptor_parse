@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: descriptor_parse
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: descriptor_parse

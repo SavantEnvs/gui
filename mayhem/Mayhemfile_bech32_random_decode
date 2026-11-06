@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: bech32_random_decode
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: bech32_random_decode

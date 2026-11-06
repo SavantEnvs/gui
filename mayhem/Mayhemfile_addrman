@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: addrman
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: addrman

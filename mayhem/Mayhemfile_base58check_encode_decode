@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: base58check_encode_decode
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: base58check_encode_decode

@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: process_message
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: process_message

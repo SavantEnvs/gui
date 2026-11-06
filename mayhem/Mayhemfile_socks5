@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: socks5
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: socks5

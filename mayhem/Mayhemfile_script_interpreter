@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: script_interpreter
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: script_interpreter

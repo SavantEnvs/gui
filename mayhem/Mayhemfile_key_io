@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: key_io
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: key_io
