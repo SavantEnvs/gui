@@ -1,0 +1,8 @@
+project: savantenvs/gui
+target: blockfilter
+cmds:
+  - cmd: /mayhem/fuzz
+    libfuzzer: true
+    timeout: 10
+    env:
+      FUZZ: blockfilter
